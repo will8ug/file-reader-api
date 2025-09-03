@@ -1,0 +1,30 @@
+[
+  {
+    "name": "hello",
+    "code": 1,
+    "scope": "Word",
+    "params": {
+      "mandatory": [
+        "name"
+      ],
+      "optional": [
+        "original_content"
+      ]
+    },
+    "file": "hello.txt"
+  },
+  {
+    "name": "welcome",
+    "code": 2,
+    "scope": "Email",
+    "params": {
+      "mandatory": [
+        "user_name"
+      ],
+      "optional": [
+        "company"
+      ]
+    },
+    "file": "welcome.txt"
+  }
+]

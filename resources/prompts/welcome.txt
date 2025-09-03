@@ -1,0 +1,6 @@
+Welcome to our platform, {user_name}!
+
+We're excited to have you on board.
+
+Best regards,
+The {company} Team

@@ -65,9 +65,13 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B59CA0855E6A4A87B3D28CE3793D8E77 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0B35CB81405E473EA872D54048A85EAB }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0D796D5D0AC34868A21324EC595BFE9F }}
+      
+      - name: 'Fake a poetry build for GitHub Actions'
+        run: |
+          cp -f for-gh-with-poetry/pyproject.toml .
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
           app-name: 'promptmgr'

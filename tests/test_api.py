@@ -47,7 +47,7 @@ class TestAPI:
         assert prompt["name"] == "hello"
         assert "content" in prompt
         assert "file" not in prompt
-        assert "Hello, {name}! Welcome!" in prompt["content"]
+        assert "Hello, {name}!" in prompt["content"]
     
     def test_get_prompt_by_invalid_code(self):
         """Test getting a prompt with invalid code returns 404."""

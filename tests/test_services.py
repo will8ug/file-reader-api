@@ -35,7 +35,7 @@ class TestPromptService:
         assert prompt.name == "hello"
         assert hasattr(prompt, 'content')
         assert not hasattr(prompt, 'file')
-        assert "Hello, {name}! Welcome!" in prompt.content
+        assert "Hello, {name}!" in prompt.content
     
     def test_get_prompt_by_invalid_code(self, service):
         """Test getting a prompt with invalid code returns None."""

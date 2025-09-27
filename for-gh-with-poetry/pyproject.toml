@@ -1,7 +1,7 @@
 [project]
 name = "file-reader-api"
 version = "0.1.0"
-description = ""
+description = "An demo API service for file reader"
 authors = [
     {name = "Will",email = "yzj_000@163.com"}
 ]

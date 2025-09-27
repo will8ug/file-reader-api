@@ -69,6 +69,7 @@ jobs:
       - name: 'Fake a poetry build for GitHub Actions'
         run: |
           cp -f for-gh-with-poetry/pyproject.toml .
+          cat pyproject.toml
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3

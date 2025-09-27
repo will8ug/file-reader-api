@@ -1,7 +1,7 @@
 [project]
 name = "file-reader-api"
 version = "0.1.0"
-description = "An demo API service for file reader"
+description = "A simple API to read local files and return prompt templates"
 authors = [
     {name = "Will",email = "yzj_000@163.com"}
 ]

@@ -1,9 +1,10 @@
-import pytest
+import logging
 from fastapi.testclient import TestClient
 from app.main import app
 
 client = TestClient(app)
 
+logger = logging.getLogger(__name__)
 
 class TestAPI:
     def test_root_endpoint(self):
@@ -64,4 +65,5 @@ class TestAPI:
         assert response.status_code == 200
         
         data = response.json()
+        logger.debug(f"Health check response: {data}")
         assert data["status"] == "healthy"
